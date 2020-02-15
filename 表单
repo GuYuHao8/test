@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form属性</title>
+</head>
+<body bgcolor="#FFFFFF">
+<form id="testform" >
+    <input type="submit" name="A1" value="寒假练习 3.html" formaction="寒假练习 3.html">
+    <input type="submit" name="A2" value="百度一下" formaction="http://www.baidu.com" >
+    <textarea form="testform"></textarea>
+</form>
+
+<br><br><br><br><br><br><br><br>
+
+<form id="testform">
+    <input type="submit" name="s1" value="V1" formmethod="post" formaction="寒假练习 3.html">提交
+    <input type="submit" name="s2" value="V2" formmethod="get" formaction="http://www.baidu.com">提交
+</form>
+
+<br><br><br><br><br><br><br><br>
+
+<form >
+    <input type="text" formenctype="text/plain"> 
+    <!-- 空格转换为 "+" 加号，但不对特殊字符编码 -->
+    <input type="text" formenctype="application/x-www-form-urlencoded">
+    <!-- 在发送前编码所有字符（默认） -->
+    <input type="text" formenctype="multipart/form-data">
+    <!-- 不对字符编码,在使用包含文件上传控件的表单时，必须使用该值。 -->
+</form>
+
+<!-- _blank 在新的浏览器页面窗口打开
+_self 相同的框架frame打开
+_parent 当前框架副框架中打开
+_top 在当前窗口中打开
+framename 在指定框架中打开 -->
+
+<form action="http://www.baidu.com">
+    <input type="submit" formtarget="_blanl" value="新的">
+    <input type="submit" formtarget="_self" value="相同的">
+    <input type="submit" formtarget="_parent" value="副框架">
+    <input type="submit" formtarget="_top" value="当前窗口">
+    <input type="submit" formtarget="frame" value="指定框架">
+</form>
+</body>
+</html>
