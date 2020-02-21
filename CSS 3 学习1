@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS基础.css" type="text/css">
+    <style>
+    h1,a{
+    color:green;
+}
+li strong{
+    color: red;
+}
+strong{
+    color: rosybrown;
+}
+#pid{
+    color:red;
+}
+#head{
+    color:blue;
+}
+.pattern{
+    color: hotpink;
+}
+.pattern2,a{
+    color: indigo;
+}
+[title]{
+    color: blue;
+}
+[title=jd]{
+    color:red;
+}
+body{
+    background-image: url("html.png");
+    background-repeat: no-repeat;
+    background-position:center center;
+    /* right和center */
+    background-attachment: fixed;
+    background-size: 500px 200px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>这是一个CSS学习基础</h1>
+    <a>选择器分组</a>
+    <h2>这是一个子标题</h2>
+    <!-- body元素可以定义在body中的所有样式（除去特殊规定的样式） -->
+    <br><br><br><br><br>
+    1.派生选择器：
+    <p><strong>p标签</strong></p>
+    <ul>
+        <li><strong>定义样式</strong></li>
+    </ul>
+    就是在定义样式前加一个范围
+    <br><br><br>
+    2.ID选择器
+    <p id="pid">hello world！<a href="http://www.baidu.com">学院</a></p>
+    <div id="head"> 这是一个div</div>
+    <br><br><br>
+    3.类选择器
+    <p class="pattern">这是另一个世界！<a href="http://www.baidu.com">百度</a></p>
+    <div class="pattern2">这是另一个<p>神奇的</p>div</div>
+    <br><br><br>
+    4.属性选择器/属性和值选择器
+    <p title="tb">属性选择器</p>
+    <p title="jd">属性选择器</p>
+    <br><br><br>
+    5.background
+    <p>测试一下颜色是否可以继承</p>
+
+</body>
+</html>
