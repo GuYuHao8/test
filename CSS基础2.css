@@ -1,0 +1,38 @@
+a:link{
+    color: #FF0000;
+    text-decoration: none;
+    background-color: gray;
+}
+a:hover{
+    color: #00FF00;
+}
+a:visited{
+    color: blue;
+}
+a:active{
+    color:yellow;
+}
+ul.ul1{
+    list-style-position: inside;
+}
+ul.ul2{
+    list-style-position: outside;
+}
+#tb{
+    border-collapse: collapse;
+    width: 500px;
+    height: 100px; 
+}
+#tb td,th{
+    border:1px solid aqua;
+    padding: 5px;
+}
+#tb th{
+    text-align: right;
+    background-color: red;
+    color: #FFFFFF;
+}
+#tb tr.alt td{
+    color: black;
+    background-color: aquamarine;
+}
